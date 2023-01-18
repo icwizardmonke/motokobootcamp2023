@@ -10,5 +10,9 @@ actor {
     return volume;
   };
 
+  public query func hours_to_minutes(n : Nat) : async Nat {
+  let minutes : Nat = n*60;
+    return minutes ;
+  };
 
 };
