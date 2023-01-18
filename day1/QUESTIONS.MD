@@ -34,9 +34,7 @@ actor {
 ```
 
 The `message` variable type is Text but is assigned a number.
-TODO: Look for more problems on #3
-
 
 **4.  False or True: we can remove the keyword **async** for the return argument of a query function since queries are faster to answer.**
 
-TODO
+True
