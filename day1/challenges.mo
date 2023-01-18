@@ -25,4 +25,9 @@ actor {
     return counter;
   };
 
+  public query func test_divide(n: Nat, m : Nat) : async Bool {
+    return (n % m == 0);
+  };
+
+
 };
