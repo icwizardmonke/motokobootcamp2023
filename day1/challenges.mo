@@ -29,5 +29,10 @@ actor {
     return (n % m == 0);
   };
 
+  public query func is_even(n: Nat) : async Bool {
+    return (n % 2 == 0);
+  };
+
+
 
 };
