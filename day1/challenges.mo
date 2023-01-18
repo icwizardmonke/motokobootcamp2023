@@ -1,4 +1,5 @@
 actor {
+  var counter : Nat = 0;
 
   public query func multiply(n : Nat, m : Nat) : async Nat {
   let product : Nat = n*m;
@@ -13,6 +14,15 @@ actor {
   public query func hours_to_minutes(n : Nat) : async Nat {
   let minutes : Nat = n*60;
     return minutes ;
+  };
+
+  public query func set_counter(n : Nat) : async () {
+    counter := n;
+    return;
+  };
+
+  public query func get_counter() : async Nat {
+    return counter;
   };
 
 };
