@@ -23,4 +23,15 @@ actor {
     };
   return (count)
   };
+
+  public func factorial(n : Nat) : async Nat {
+    var index : Nat = n - 1;
+    var result : Nat = 1;
+    while (index > 0) {
+      result += index*result;
+      index -= 1;
+    };
+    return result;
+  };
+
 }
