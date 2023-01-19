@@ -34,4 +34,15 @@ actor {
     return result;
   };
 
+  public func number_of_words(t : Text) : async Nat {
+    let words = Text.split(t, #char ' ');
+    var word_count : Nat = 0;
+
+    for (word in words) {
+      word_count += 1;
+    };
+ 
+    return word_count;
+  };
+
 }
