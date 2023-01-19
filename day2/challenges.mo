@@ -13,4 +13,14 @@ actor {
     let average : Int = (sum/index);
     return (average);
   };
+
+  public func count_character(t : Text, c : Char) : async Nat {
+    var count : Nat = 0;
+    for (char in t.chars() ) {
+      if (char == c) {
+        count += 1;
+      }
+    };
+  return (count)
+  };
 }
