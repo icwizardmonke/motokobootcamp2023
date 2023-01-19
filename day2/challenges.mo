@@ -66,4 +66,10 @@ actor {
     return duplicates;
   };
 
+  public func convert_to_binary(n : Nat) : async Text {
+
+  return "TODO";
+  };
+
+
 }
