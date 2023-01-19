@@ -44,6 +44,11 @@ actor {
 
 **6. What is wrong with the following code?**
 
+Need to import the Array module:
+
+    import Array "mo:base/Array";
+
+
 ```
 actor {
   var languages : [Text] = ["English", "German", "Chinese", "Japanese", "French"];
