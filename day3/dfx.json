@@ -1,0 +1,19 @@
+{
+  "canisters": {
+    "day3": {
+      "main": "main.mo",
+      "type": "motoko"
+    },
+    "utils": {
+      "main": "utils.mo",
+      "type": "motoko"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "version": 1
+}
