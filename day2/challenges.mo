@@ -1,3 +1,4 @@
+import Text "mo:base/Text";
 import Array "mo:base/Array";
 
 actor {
@@ -43,6 +44,26 @@ actor {
     };
  
     return word_count;
+  };
+
+  public func find_duplicates(a : [Nat]) : async [Nat] {
+    var duplicates : [Nat] = [];
+    var find_dup : ?Nat = null;
+    for (entry in a.vals()) {
+
+      // check for dupes
+      let dupElements = Array.filter<Nat>(a, func x = x == entry);
+      if (dupElements.size() > 1) {  
+
+        // if not currently in new array, append entry
+        find_dup := Array.find<Nat>(duplicates, func x = x == entry);
+        if (find_dup == null) {
+          duplicates := Array.append<Nat>(duplicates, [entry]);
+        };
+      };
+    };
+
+    return duplicates;
   };
 
 }
