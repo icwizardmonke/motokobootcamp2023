@@ -28,6 +28,9 @@ Need to import the **Nat** module:
 
 **5. What is wrong with the following code?**
 
+Two variable declarations should be modified `[var Text]` becomes `[Text]`
+
+
 ```
 actor {
   var languages : [var Text] = ["English", "German", "Chinese", "Japanese", "French"];
